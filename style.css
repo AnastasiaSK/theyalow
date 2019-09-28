@@ -11,6 +11,11 @@
   font-family: "PT Sans Narrow";
   src: url(./assets/fonts/pt-sans/PTN57F.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Asap";
+  src: url(./assets/fonts/asap/Asap-Regular.otf) format("opentype");
+  font-weight: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -31,6 +36,7 @@
 header {
   display: flex;
   align-items: center;
+  padding: 25px 0;
 }
 
 .logo {
@@ -58,6 +64,7 @@ h1 {
   text-transform: uppercase;
 }
 nav {
+  align-self: flex-end;
   margin-left: auto;
 }
 
@@ -66,11 +73,13 @@ nav {
 
   background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
   padding-left: 20px;
+
+  box-shadow: -5px -5px rgba(245, 197, 5, 0.25),
+    -10px -10px rgba(245, 197, 5, 0.25);
 }
 
 .main-nav li {
-  padding: 10px;
-  padding-left: 35px;
+  padding: 12px 20px 13px 45px;
 }
 
 .main-nav li:not(:first-child) {
@@ -103,6 +112,103 @@ nav {
   background-image: url(/assets/images/icon_mail.svg);
   background-repeat: no-repeat;
   background-position: 5px center;
+}
+
+.banner {
+  padding-top: 35px;
+  padding-left: 10px;
+  display: flex;
+}
+
+.banner video {
+  width: 550px;
+  height: 330px;
+}
+
+.button-prev {
+  width: 32px;
+  height: 57px;
+  background-image: url(/assets/images/prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(245, 197, 6, 0.7);
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -27.5px;
+}
+.button-next {
+  width: 32px;
+  height: 57px;
+  background-image: url(/assets/images/next.svg);
+  background-color: rgba(245, 197, 6, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -27.5px;
+}
+.video-wrapper {
+  position: relative;
+}
+
+.video-controls {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  width: 100%;
+}
+
+.video-controls-progress {
+  background-color: rgba(245, 197, 6, 0.25);
+  border-radius: 5px;
+  flex: 1;
+  height: 10px;
+  overflow: hidden;
+}
+
+.video-progress {
+  background-color: #f5c507;
+  width: 40%;
+  height: 10px;
+}
+
+.video-controls-play,
+.video-controls-mute {
+  margin: 0 30px;
+}
+.banner-name {
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.cool {
+  font-size: 63px;
+  letter-spacing: 1px;
+  color: #f5c506;
+  font-family: "Asap";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.minimal {
+  font-size: 63px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Asap";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .icon-area {
