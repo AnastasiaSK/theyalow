@@ -15,11 +15,13 @@
     <div class="wrapper">
       <div class="content">
         <header>
-          <div class="logo">
-            <img src="./assets/images/logo_l1.svg" alt="" />
-            <img class="logo-icon" src="./assets/images/logo_l2.svg" alt="" />
+          <div class="logo-wrapper">
+            <div class="logo">
+              <img src="./assets/images/logo_l1.svg" alt="" />
+              <img class="logo-icon" src="./assets/images/logo_l2.svg" alt="" />
+            </div>
+            <h1>TheYalow</h1>
           </div>
-          <h1>TheYalow</h1>
           <nav>
             <ul class="main-nav">
               <li class="main-nav-contact"><a href="">About Us</a></li>
@@ -31,10 +33,10 @@
       </div>
       <div class="banner-wrapper">
         <div class="content banner">
-          <button name="prev" class="button-prev"></button>
-          <button name="next" class="button-next"></button>
+          <button name="prev" class="button-prev mobile-none"></button>
+          <button name="next" class="button-next mobile-none"></button>
           <div class="video-wrapper">
-            <video src="" poster="/assets/images/video_bg.png"></video>
+            <video src=""></video>
             <div class="video-cover"></div>
             <div class="video-play"></div>
             <div class="video-controls">
@@ -50,7 +52,7 @@
               </div>
             </div>
           </div>
-          <div class="banner-name">
+          <div class="banner-name mobile-none">
             <div class="cool">
               The cool
             </div>
@@ -97,7 +99,7 @@
 
       <section class="articles-wrapper">
         <div class="content">
-          <h2>Lorem ipsum dolor sit amet</h2>
+          <h2 class="mobile-none">Lorem ipsum dolor sit amet</h2>
           <div class="articles">
             <div class="article">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -106,17 +108,46 @@
             </div>
             <div class="article article-video">
               <video src="#"></video>
+              <div class="video-play"></div>
             </div>
-            <div class="article">
+            <div class="article article-twitter mobile-none">
               <div class="article-page">22</div>
               <span class="article-plus"></span>
             </div>
           </div>
-          <div class="article-date">
+          <div class="articles twitter">
+            <div class="article article-twitter"></div>
+            <div class="article twitter-messages">
+              <div class="twitter-message">
+                <div class="twitter-text">
+                  Daily Mobile UI Design Inspiration #1
+                </div>
+                <div class="twitter-author">via @cssauthor</div>
+              </div>
+              <div class="twitter-message">
+                <div class="twitter-text">
+                  Daily Mobile UI Design Inspiration #1
+                </div>
+                <div class="twitter-author">via @cssauthor</div>
+              </div>
+              <div class="twitter-message">
+                <div class="twitter-text">
+                  Daily Mobile UI Design Inspiration #1
+                </div>
+                <div class="twitter-author">via @cssauthor</div>
+              </div>
+              <form class="twitter-form">
+                <input class="twitter-form-text" type="text">
+                <input class="twitter-form-tweet" type="submit" value="Tweet" >
+              </form>
+            </div>
+          </div>
+          </div>
+          <div class="article-date mobile-none">
             <div class="article-day">25</div>
             <div class="article-month">april</div>
           </div>
-          <div class="articles-scroll">
+          <div class="articles-scroll mobile-none">
             <div class="articles-scroll-thumb"></div>
           </div>
         </div>
@@ -126,11 +157,11 @@
         <div class="content">
           <h2>Lorem ipsum dolor sit amet</h2>
           <div class="devices-item">
-            <div class="discount"><span>Its 100% Free</span></div>
             <div class="devices-img">
+              <div class="discount"><span>Its 100% Free</span></div>
               <img src="/assets/images/devices.png" alt="" />
             </div>
-            <div>
+            <div class="mobile-none">
               <ul>
                 <li>Sed ut perspiciatis unde omnis</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
