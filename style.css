@@ -42,6 +42,11 @@
   src: url(./assets/fonts/segoeuib.ttf) format("truetype");
   font-weight: bold;
 }
+@font-face {
+  font-family: "Segoe UI";
+  src: url(./assets/fonts/SegoeUI-Light.ttf) format("truetype");
+  font-weight: 300;
+}
 
 * {
   box-sizing: border-box;
@@ -62,7 +67,7 @@
 header {
   display: flex;
   align-items: center;
-  padding: 25px 0;
+  padding: 27px 0 25px;
 }
 
 .logo {
@@ -98,14 +103,17 @@ nav {
   display: flex;
 
   background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
-  padding-left: 20px;
+  padding-left: 29px;
 
   box-shadow: -5px -5px rgba(245, 197, 5, 0.25),
     -10px -10px rgba(245, 197, 5, 0.25);
 }
+.main-nav li:hover a {
+  color: #1c1a10;
+}
 
 .main-nav li {
-  padding: 12px 20px 13px 45px;
+  padding: 10px 20px 12px 45px;
 }
 
 .main-nav li:not(:first-child) {
@@ -142,8 +150,8 @@ nav {
 
 .banner-wrapper {
   position: relative;
-  padding-top: 35px;
-  padding-left: 10px;
+  padding-top: 33px;
+  padding-left: 18px;
 }
 
 .banner {
@@ -334,6 +342,10 @@ nav {
   bottom: 13px;
 }
 
+.article-plus:hover {
+  transform: scale(2);
+}
+
 .article-date {
   padding: 4px 27px;
   background-color: #ddb101;
@@ -404,6 +416,7 @@ nav {
   flex-flow: column;
   align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.14);
+  justify-content: flex-end;
 }
 
 .icon-area-item:first-child {
@@ -413,6 +426,9 @@ nav {
 .icon-area-img {
   margin-bottom: 15px;
   flex-basis: 60%;
+}
+.icon-area-item:hover img {
+  transform: translate(0, -20%);
 }
 
 .devices {
